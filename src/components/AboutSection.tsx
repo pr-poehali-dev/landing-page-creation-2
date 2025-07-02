@@ -6,7 +6,23 @@ export default function AboutSection() {
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div>
+          <div className="order-2 lg:order-1">
+            <div className="relative">
+              <img
+                src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=600&q=80"
+                alt="Уютный интерьер дома помощи"
+                className="rounded-lg shadow-xl w-full"
+              />
+              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-100 rounded-lg overflow-hidden shadow-lg">
+                <img
+                  src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=200&q=80"
+                  alt="Консультация специалиста"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="order-1 lg:order-2">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 mb-6">
               О нашем доме
             </h2>
